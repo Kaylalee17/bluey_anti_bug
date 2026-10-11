@@ -7,6 +7,7 @@ import random
 import logging
 logging.basicConfig(filename="worker.log", level=logging.INFO, format="%(asctime)s %(message)s")
 
+os.makedirs("/data", exist_ok=True)
 SESSION_FILE = "/data/bot.sqlite3"
 PHONE = "2348129982887"
 
