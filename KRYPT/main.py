@@ -7,7 +7,7 @@ import random
 import logging
 logging.basicConfig(filename="worker.log", level=logging.INFO, format="%(asctime)s %(message)s")
 
-SESSION_FILE = "bot.sqlite3"
+SESSION_FILE = "/data/bot.sqlite3"
 PHONE = "2348129982887"
 
 first_time = not os.path.exists(SESSION_FILE)  # check BEFORE making client
