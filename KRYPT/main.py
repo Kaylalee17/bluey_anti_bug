@@ -9,7 +9,7 @@ logging.basicConfig(filename="worker.log", level=logging.INFO, format="%(asctime
 
 os.makedirs("/data", exist_ok=True)
 SESSION_FILE = "/data/bot.sqlite3"
-PHONE = "2347012274872"
+PHONE = os.getenv("PHONE")
 
 first_time = not os.path.exists(SESSION_FILE)  # check BEFORE making client
 client = NewClient(SESSION_FILE)
